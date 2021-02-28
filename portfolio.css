@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background{
+    background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url("pictures/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+    position: relative;
+}
+
+
+/* start of navbar */
+.navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.navbar-inverse.sticky{
+    background-color: crimson;
+}
+
+.navbar-invers .icon-bar{
+    background-color: #1983d3;
+    border-color: #1983d3;
+}
+
+
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    transition: o.5s;
+    transition-property: color;
+}
+
+.navbar-brand span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar-inverse.sticky .navbar-brand span{
+    color: #1983d3;
+}
+.navbar-inverse .navbar-brand:hover{
+    
+    cursor: pointer;
+}
+.navbar-inverse .navbar-right li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    transition-property: color;
+}
+.navbar-inverse .navbar-right > li > a:hover{
+    background-color: transparent;
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar-inverse.sticky .navbar-right > li > a:hover{
+    color: #1983d3;
+}
+/* end of navbar */
+
+
+/* start of text in the banner */
+.banner{
+    padding-top: 20rem;
+    font-family: 'ubuntu', sans-serif;
+}
+.banner .text1{
+    color: #fff;
+    font-size: 27px;
+    z-index: 9999;
+}
+.banner .text2{
+    color: #fff;
+    font-size: 65px;
+    font-weight: 600;
+    z-index: 9999;
+}
+.banner .text3{
+    color: #fff;
+    font-size: 40px;
+    z-index: 9999;
+}
+.banner .text3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.btn-light{
+    margin: 10px 5px 0 5px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.btn-light:hover{
+    background-color: #1983d3;
+    color: #fff;
+}
+
+.about{
+    color: #000;
+    z-index: 2;
+    font-family: 'poppins', sans-serif;
+}
+.about h3{
+    color: crimson;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about .under{
+    background-color: #1983d3;
+    height: 3px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .under::after{
+    content: "who am i";
+    background-color: #fff;
+    font-size: 12px;
+    color: crimson;
+    margin-top: -15px;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .row1{
+    margin-top: 10rem ;
+}
+.about .row1 .about-text{
+    margin: 20px 0 10px 0;
+}
+.about img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+.about .row1 .about-text a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.about .row1 .about-text a:hover{
+    background-color: #1983d3;
+}
+/* end of text in the banner */
+
+
+/* start of passion section */
+.passion{
+    font-family: 'ubuntu', sans-serif;
+}
+.passion h3,
+.projects h3{
+    color: crimson;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.passion .centerline{
+    background-color: #1983d3;
+    height: 3px;
+    width: 150px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.passion .card{
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    padding: 7px;
+}
+.passion .card:hover{
+    background-color: crimson;
+    color: #fff;
+}
+.passion .card .inner{
+    transition: all 0.3s ease;
+}
+.passion .card:hover .inner{
+    transform: scale(1.05);
+}
+.passion .card  .inner .wrapper{
+    border-radius: 50px;
+    background-color: #1983d3;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin: 10px 0 10px 0;
+    transform: translateX(-50%);
+}
+.passion .card .inner .wrapper i{
+    color: crimson;
+    margin-top: 30px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.passion .card:hover .inner .wrapper i{
+    color: #fff;
+}
+.passion .card .inner .title{
+    margin: -3px 0 10px 0;
+    font-size: 15px;
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.passion .card:hover .inner .title{
+    color: #fff;
+}
+/* end of passion section */
+
+/* start of experience section */
+.experience{
+    font-family: 'poppins', sans-serif;
+}
+.experience h3,
+.contacts h3{
+    color: crimson;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+.experience .experienceline{
+    background-color: #1983d3;
+    height: 3px;
+    width: 200px;
+    margin-top: -10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.experience .row .column1 h5{
+    color: #1983d3;
+    margin-top: 7rem;
+}
+.experience .row .column2{
+    margin-top: 15rem;
+}
+.experience img{
+    margin: 10px -20px 10px 0;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+.experience .row .column2 h5{
+    color: #1983d3;
+    margin-top: -7rem;
+    margin-bottom: 10px;
+}
+/* end of experience section */
+
+
+/* start of projects section */
+.projects{
+    font-family: 'ubuntu', sans-serif;
+    margin-bottom: 30px;
+}
+.projects .projectline,
+.contacts .contactline{
+    background-color: #1983d3;
+    height: 3px;
+    width: 190px;
+    margin-top: -15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.projects .row .showcase{
+    margin: 20px 0 20px 0;
+}
+.projects h5{
+    margin: 50px 0 20px 0;
+    color: #1983d3;
+}
+.projects .showcase a img{
+    margin: 20px;
+    transition: all 0.1s ease;
+    transition-property: transform;
+}
+.projects .showcase a img:hover{
+    transform: scale(1.05);
+}
+/* end of projects section */
+
+
+/* start of contacts section */
+.contacts{
+    font-family: 'poppins', sans-serif;
+    background-image: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)), url("pictures/contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.contacts .form{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	padding:45px;
+    margin-top: 30px;
+	box-sizing: border-box;
+	/*border: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);*/
+}
+.contacts .form form input{
+	padding:5px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+}
+.contacts .form form input[type="submit"]{
+	border-radius: 20px;
+	height: 40px;
+	cursor: pointer;
+	background: #1983d3;
+	color: #fff;
+	margin-bottom: 0;
+}
+.contacts .form form input[type="submit"]:hover{
+	background: crimson;
+}
+.contacts .form form div{
+	position: relative;
+}
+.contacts .form form div label{
+	position: absolute;
+	top: 3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+}
+.contacts .form form input:focus ~label,
+.contacts .form form input:valid ~label{
+	left: 0;
+	top: -20px;
+	color: rgb(66,133,244);
+	font-size: 12px;
+	font-weight: bold;
+}
+.contacts .form form input:focus,
+.contacts .form form input:valid{
+	border-bottom: 2px solid rgb(66,133,244);
+}
+/* end of contacts section */
+
+
+/* scrollUp button */
+.scrolltop{
+    /*display: none;*/
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #1983d3;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scrolltop.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* media section */
+.media{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 999;
+}
+.media a i{
+    font-size: 15px;
+    color: #fff;
+    background-color: #1983d3;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.media a i:hover{
+    background-color: crimson;
+}
+.media.display{
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+/* start of footer section */
+.footer{
+    background-color: crimson;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'ubuntu', sans-serif;
+    padding: 20px 0 10px 0;
+}
+.footer span{
+    color: #1983d3;
+}
+.footer span:hover{
+    text-decoration: underline;
+}
+/* end of footer section */
+
+
+/* start of media queries */
+/*******@media screen and (max-width: 400px){
+    .banner .text1{
+        font-size: 18px;
+    }
+    .banner .text2{
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .banner .text3{
+        font-size: 25px;
+    }
+    .about img{
+        width: 350px;
+        height: 300px;
+    }
+    .experience img{
+        margin: 10px 1px;
+        width: 30px;
+        height: 30px;
+    }
+}*/
+
+@media screen and (max-width: 768px){
+    .banner .text1{
+        font-size: 20px;
+    }
+    .banner .text2{
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .banner .text3{
+        font-size: 24px;
+    }
+    .about img{
+        width: 400px;
+        height: 350px;
+    }
+    .experience img{
+        margin: 13px 2px;
+        width: 50px;
+        height: 50px;
+    }
+    .media{
+        left: 20px;
+    }
+    .footer{
+        font-size: 12px;
+    }
+}
+
