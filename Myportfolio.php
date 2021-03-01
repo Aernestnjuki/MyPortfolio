@@ -68,8 +68,8 @@
             <div class="text1">Hi, my name is,</div>
             <div class="text2">Aernest Njuki</div>
             <div class="text3">And i'm a <span class="typing1"></span></div>
-            <button class="btn btn-light" type="submit">Get in touch</button>
-            <button class="btn btn-light" type="submit">Project</button>
+            <a href="#contacts" class="btn btn-light" type="submit">Get in touch</a>
+            <a href="#projects" class="btn btn-light" type="submit">Project</a>
         </div>
     </div>  
     <!-- end of the navigation bar-->   
@@ -382,24 +382,18 @@
 
     <!-- social media section -->
     <div class="media">
-        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a><br>
-        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br>
-        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a><br>
-        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><br>
+        <a href="https://api.whatsapp.com/send?phone=254796253350&text=Hey%20Aernest%20i%20am%20.%20.%20.%20"><i class="fa fa-whatsapp" aria-hidden="true"></i></a><br>
+        <a href="https://www.facebook.com/aernest.njuki"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><br>
     </div>
 
 
 
     <!-- start of footer section-->
     <div class="footer text-center">
-        Copyright &copy;2021 <span>MyPortfolio</span>. All rights Researved.
+        Copyright &copy;2021 <span>MyPortfolio</span>. All rights Reserved.
     </div>
     <!-- start of footer section-->
 
     <script src="portfolio.js"></script>
 </body>
 </html>
-
-
-
-
