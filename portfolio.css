@@ -51,7 +51,6 @@ html{
     color: #1983d3;
 }
 .navbar-inverse .navbar-brand:hover{
-    
     cursor: pointer;
 }
 .navbar-inverse .navbar-right li a{
@@ -90,7 +89,7 @@ html{
 }
 .banner .text3{
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 9999;
 }
 .banner .text3 span{
@@ -101,6 +100,7 @@ html{
     margin: 10px 5px 0 5px;
     padding: 15px;
     border-radius: 10px;
+    text-decoration: none;
     background-color: crimson;
     color: #fff;
     transition: all 0.3s ease;
@@ -117,6 +117,7 @@ html{
 }
 .about h3{
     color: crimson;
+    font-size: 27px;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -172,6 +173,7 @@ html{
 .projects h3{
     color: crimson;
     font-weight: 500;
+    font-size: 27px;
     margin-bottom: 20px;
 }
 .passion .centerline{
@@ -236,7 +238,9 @@ html{
 .contacts h3{
     color: crimson;
     font-weight: 500;
+    font-size: 27px;
     margin-bottom: 23px;
+    z-index: 9999;
 }
 .experience .experienceline{
     background-color: #1983d3;
@@ -398,8 +402,8 @@ html{
 .media{
     display: none;
     position: fixed;
-    bottom: 20px;
-    left: 40px;
+    bottom: 250px;
+    right: 40px;
     z-index: 999;
 }
 .media a i{
@@ -424,7 +428,7 @@ html{
 .footer{
     background-color: crimson;
     color: #fff;
-    font-size: 15px;
+    font-size: 22px;
     font-family: 'ubuntu', sans-serif;
     padding: 20px 0 10px 0;
 }
@@ -437,39 +441,142 @@ html{
 /* end of footer section */
 
 
-/* start of media queries */
-/*******@media screen and (max-width: 400px){
+/*=================== start of media queries =================*/
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px){
+    .navbar-inverse .navbar-brand{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .navbar-inverse .navbar-right li a{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .banner{
+        padding-top: 22rem;
+    }
     .banner .text1{
         font-size: 18px;
     }
     .banner .text2{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 200;
     }
     .banner .text3{
         font-size: 25px;
+    }
+    .btn-light{
+        margin: 7px 3px 0 3px;
+        padding: 10px;
+    }
+    .about h3,
+    .experience h3,
+    .contacts h3,
+    .passion h3,
+    .projects h3{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .about .row1 .about-text a{
+        padding: 8px;
     }
     .about img{
         width: 350px;
         height: 300px;
     }
     .experience img{
-        margin: 10px 1px;
-        width: 30px;
-        height: 30px;
+        margin: 13px 2px;
+        width: 50px;
+        height: 50px;
     }
-}*/
+    .experience .textScroll{
+        font-size: 15px;
+    }
+    .passion .card  .inner .wrapper{
+        width: 80px;
+        height: 80px;
+    }
+    .passion .card .inner .wrapper i{
+        margin-top: 27px;
+        font-size: 25px;
+    }
+    .contacts .form{
+        width: 400px;
+        padding: 35px;
+        margin-top: 30px;
+    }
+    .contacts .form form input{
+        padding:3px;
+        margin-bottom: 40px;
+        width: calc(100% - 20px);
+    }
+    .media{
+        right: 5px;
+        bottom: 400px;
+    }
+    .scrolltop{
+        /*display: none;*/
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+    }
+    .scrolltop.show{
+        bottom: 40px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .footer{
+        font-size: 12px;
+    }
+}
 
-@media screen and (max-width: 768px){
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar-inverse .navbar-brand{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .navbar-inverse .navbar-right li a{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .banner{
+        padding-top: 22rem;
+    }
     .banner .text1{
         font-size: 20px;
     }
     .banner .text2{
-        font-size: 40px;
-        font-weight: 200;
+        font-size: 35px;
+        font-weight: 300;
     }
     .banner .text3{
-        font-size: 24px;
+        font-size: 28px;
+    }  
+    .btn-light{
+        margin: 7px 3px 0 3px;
+        padding: 10px;
+    }
+    .about h3,
+    .experience h3,
+    .contacts h3,
+    .passion h3,
+    .projects h3{
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .about .row1 .about-text a{
+        padding: 10px;
     }
     .about img{
         width: 400px;
@@ -480,11 +587,228 @@ html{
         width: 50px;
         height: 50px;
     }
+    .experience .textScroll{
+        font-size: 15px;
+    }
+    .passion .card  .inner .wrapper{
+        width: 90px;
+        height: 90px;
+    }
+    .passion .card .inner .wrapper i{
+        margin-top: 28px;
+        font-size: 25px;
+    }
+    .contacts .form{
+        width: 400px;
+        padding: 35px;
+        margin-top: 30px;
+    }
+    .contacts .form form input{
+        padding:3px;
+        margin-bottom: 40px;
+        width: calc(100% - 20px);
+    }
     .media{
-        left: 20px;
+        right: 5px;
+        bottom: 400px;
+    }
+    .scrolltop{
+        /*display: none;*/
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+    }
+    .scrolltop.show{
+        bottom: 40px;
+        opacity: 1;
+        pointer-events: auto;
     }
     .footer{
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar-inverse .navbar-brand{
+        font-size: 25px;
+        font-weight: 550;
+    }
+    .navbar-inverse .navbar-right li a{
+        font-size: 17px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .banner{
+        padding-top: 22rem;
+    }
+    .banner .text1{
+        font-size: 23px;
+    }
+    .banner .text2{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .banner .text3{
+        font-size: 30px;
+    }  
+    .btn-light{
+        margin: 7px 3px 0 3px;
+        padding: 10px;
+    }
+    .about h3,
+    .experience h3,
+    .contacts h3,
+    .passion h3,
+    .projects h3{
+        font-weight: 400;
+        font-size: 23px;
+    }
+    .about .row1 .about-text a{
+        padding: 10px;
+    }
+    .about img{
+        width: 350px;
+        height: 300px;
+    }
+    .experience img{
+        margin: 13px 2px;
+        width: 50px;
+        height: 50px;
+    }
+    .experience .textScroll{
+        font-size: 15px;
+    }
+    .passion .card  .inner .wrapper{
+        width: 90px;
+        height: 90px;
+    }
+    .passion .card .inner .wrapper i{
+        margin-top: 28px;
+        font-size: 25px;
+    }
+    .contacts .form{
+        width: 400px;
+        padding: 35px;
+        margin-top: 30px;
+    }
+    .contacts .form form input{
+        padding:3px;
+        margin-bottom: 40px;
+        width: calc(100% - 20px);
+    }
+    .media{
+        right: 5px;
+        bottom: 400px;
+    }
+    .scrolltop{
+        /*display: none;*/
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+    }
+    .scrolltop.show{
+        bottom: 40px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .footer{
+        font-size: 18px;
+    }
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar-inverse .navbar-brand{
+        font-size: 25px;
+        font-weight: 000;
+    }
+    .navbar-inverse .navbar-right li a{
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .banner .text1{
+        font-size: 25px;
+    }
+    .banner .text2{
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .banner .text3{
+        font-size: 35px;
+    }
+    .btn-light{
+        margin: 10px 5px 0 5px;
+        padding: 14px;
+    }
+    .about h3,
+    .experience h3,
+    .contacts h3,
+    .passion h3,
+    .projects h3{
+        font-weight: 450;
+        font-size: 25px;
+    }
+    .about .row1 .about-text a{
+        padding: 10px;
+    }
+    .about img{
+        width: 400px;
+        height: 350px;
+    }
+    .experience img{
+        margin: 13px 2px;
+        width: 50px;
+        height: 50px;
+    }
+    .experience .textScroll{
+        font-size: 20px;
+    }
+    .passion .card  .inner .wrapper{
+        width: 90px;
+        height: 90px;
+    }
+    .passion .card .inner .wrapper i{
+        margin-top: 28px;
+        font-size: 27px;
+    }
+    .contacts .form{
+        width: 450px;
+        padding: 42px;
+        
+    }
+    .contacts .form form input{
+        padding:5px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .media{
+        right: 10px;
+        bottom: 300px;
+    }
+    .scrolltop{
+        /*display: none;*/
+        bottom: 10px;
+        right: 20px;
+        padding: 10px;
+    }
+    .scrolltop.show{
+        bottom: 40px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .footer{
+        font-size: 20px;
+    }
+    
+}
