@@ -93,7 +93,7 @@
                     Technology</span> pursuing a degree <span class="text-primary">Business Information Technology
                     (BBIT)</span> with great interest in software development. I aspire to further my career in pursuit
                     of more knowledge and skills to develop systems that will help society. <br><br>
-                    <a href="downloadResume.php?file=Aernest njuki Resume">View Resume</a>
+                    <a href="file/Aernest njuki Resume.pdf">View Resume</a>
                 </div>
             </div>
         </div>
