@@ -85,15 +85,14 @@
                     <img src="pictures/njuki.jpg" alt="njuki" class="img-responsive image-scroll">
                 </div>
                 <div class="col-md-7 col-xs-12 about-text">
-                    I am a software engineer currently based in Murang'a, Kenya. I enjoy building systems that
-                    live in the internet. I develop custom made websites and apps that interact with 
-                    users, and are also responsive on any device. They contain a well designed frontend and 
-                    also a modern efficient backend. <br><br>
-                    At the moment am a third year student as <span class="text-primary">Murang'a University
-                    of Technology</span> pursuing a degree <span class="text-primary">Business Information
-                    Technology (BBIT)</span> with great interest in software development. I aspire to further my 
-                    career in persuit of more knowledge and skills to develop systems that will help the society
-                    at large.<br><br>
+                    I am a software engineer currently based in Murang'a, Kenya. I enjoy building 
+                    systems that live on the internet. I develop custom made websites and apps that interact 
+                    with users and are also responsive to any device. They contain a well-designed frontend and also
+                    a modern, efficient backend. <br><br>
+                    At the moment am a third-year student as <span class="text-primary">Murang'a University of
+                    Technology</span> pursuing a degree <span class="text-primary">Business Information Technology
+                    (BBIT)</span> with great interest in software development. I aspire to further my career in pursuit
+                    of more knowledge and skills to develop systems that will help society. <br><br>
                     <a href="downloadResume.php?file=Aernest njuki Resume">View Resume</a>
                 </div>
             </div>
@@ -115,10 +114,7 @@
                         </div>
                         <h5 class="text-center title">Programming</h5>
                         <div class="card-body">
-                            When it comes to programming a software engineer should be conversant with at least
-                            5 programming languages. And since this is my field i have worked with several
-                            languages to build systems. During the learning of these languages, getting error and debugging
-                            the have shappend my skills not forgetting about documentation which important during development.
+                        When it comes to programming, a software engineer should be conversant with at least five programming languages. And since this is my field, I have worked with several languages to build systems. During the learning of these languages, getting error and debugging have sharpened my skills, not forgetting about documentation which important during development.
                         </div>
                     </div>
                 </div>
@@ -131,10 +127,7 @@
                         </div>
                         <h5 class="text-center title">Data Analysis</h5>
                         <div class="card-body">
-                            With vast knowledge in Rstudio and SPSS, i have interected with complex data requiring to be analysed.
-                            Due to this i can organize the data, clean it, visualize it in any format , and most importantly analyse 
-                            the data in order to obtain factual information that can help an organization understand how it is performing.
-                            I am also looking forward to learn data science in python.
+                        With vast knowledge in Rstudio and SPSS, I have interacted with complex data requiring to be analysed. Due to this, I can organize the data, clean it, visualize it in any format, and most importantly, analyse the data to obtain factual information that can help an organization understand how it is performing. I am also looking forward to learn about data science in python.
                         </div>
                     </div>
                 </div>
@@ -147,10 +140,7 @@
                         </div>
                         <h5 class="text-center title">Design</h5>
                         <div class="card-body">
-                            with strong experience in web design where i have designed many websites i can atest the design is not only
-                            how a wedsite appears outside but also its internal functionality. Although the outer appearance also matters
-                            a lot am still working to improve my skilled in order to meet the users needs and requirements. I also stive to 
-                            come up with systems the users will enjoy while using on any platform.
+                        With robust web design experience, where I have designed many websites, I can test the design is not only how a website appears outside but also its internal functionality. Although the outer appearance also matters, I am still working to improve my skills to meet the users' needs and requirements. I also strive to come up with systems the users will enjoy while using on any platform.
                         </div>
                     </div>
                 </div>
@@ -163,10 +153,7 @@
                         </div>
                         <h5 class="text-center title">Development</h5>
                         <div class="card-body">
-                            As i am still growing in the field of software development, i have associated myself with people who have also
-                            excelled so as to gain more skilled and have new ideas of development. Currently in the university, i am an
-                            active member of <span class="text-primary">MUT developer student</span> where we meet to learn more tricks.
-                            I have taken the resposibility to help other students and developer when they are stuck while programming.
+                        As I am still growing in software development, I have associated myself with people who have also excelled in gaining more skilled and have new development ideas. Currently in the university, i am an active member of <span class="text-primary">MUT developer student</span> where we meet to learn more tricks. I have taken the responsibility to help other students and developer when they are stuck while programming.
                         </div>
                     </div>
                 </div>
@@ -182,8 +169,7 @@
             <div class="experienceline"></div>
             <div class="row">
                 <div class="text-center mt-5 textScroll">
-                    I have been doing web design and other languages of at least three years and since then i have 
-                    always been learning more and practicing as well as doing research in order to enhance my skills and experience.
+                I have been doing web design and other languages for at least three years, and since then, I have always been learning more and practising and doing research to enhance my skills and experience.
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 column1">
                     <h5 class="textScroll">Here are some of the languages and technologies i have worked with</h5>
