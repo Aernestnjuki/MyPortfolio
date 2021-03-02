@@ -506,6 +506,10 @@ html{
         margin-top: 27px;
         font-size: 25px;
     }
+    .contacts{
+        height: 100vh;
+        
+    }
     .contacts .form{
         width: 400px;
         padding: 35px;
@@ -597,6 +601,9 @@ html{
     .passion .card .inner .wrapper i{
         margin-top: 28px;
         font-size: 25px;
+    }
+    .contacts{
+        height: 100vh;
     }
     .contacts .form{
         width: 400px;
@@ -690,6 +697,9 @@ html{
     .passion .card .inner .wrapper i{
         margin-top: 28px;
         font-size: 25px;
+    }
+    .contacts{
+        height: 100vh; 
     }
     .contacts .form{
         width: 400px;
