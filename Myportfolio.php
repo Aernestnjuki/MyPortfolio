@@ -343,7 +343,7 @@
                                 <h3 class="card-title text-center">Contact Us</h3>
                             </div>
                             <div class="card-body px-4">
-                                <form action="#" method="POST">
+                                <form action="Myportfolio.php" method="POST">
                                     <div class="form-group text-center text-success">
                                         <?= $result; ?>
                                     </div>
