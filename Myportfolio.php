@@ -1,3 +1,35 @@
+<?php
+    $result = '';
+
+    if(isset($_POST['submit'])){
+        require 'contactForm/PHPMailerAutoload.php';
+        $mail = new PHPMailer;
+
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'tls';
+        $mail->Username = 'aernestnjuki@gmail.com';
+        $mail->Password = '15071998';
+
+        $mail->setFrom($_POST['email'], $_POST['name']);
+        $mail->addAddress('aernestnjuki@gmail.com');
+        $mail->addReplyTo($_POST['email'], $_POST['name']);
+
+        $mail->isHTML(true);
+        $mail->Subject = 'For My Portfolio: '.$_POST['subject'];
+        $mail->Body = '<h3>Name: '.$_POST['name'].'<br>Email: '.$_POST['email'].'<br>Message: '.$_POST['message'].'</h3>';
+
+        if(!$mail->send()){
+            $result = "Something went wrong! try again!";
+        }else{
+            $result = 'Successfull';
+        }
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,7 +125,7 @@
                     Technology</span> pursuing a degree <span class="text-primary">Business Information Technology
                     (BBIT)</span> with great interest in software development. I aspire to further my career in pursuit
                     of more knowledge and skills to develop systems that will help society. <br><br>
-                    <a href="file/Aernest njuki Resume.pdf">View Resume</a>
+                    <a href="downloadResume.php?file=Aernest njuki Resume">View Resume</a>
                 </div>
             </div>
         </div>
@@ -304,57 +336,43 @@
             <h3 class="text-center mt-4 me-scroll">Get in touch</h3>
             <div class="contactline"></div>
             <div class="form">
-            <?php
-                if(isset($_POST['submit'])){
-                    $name = $_POST['fullName'];
-                    $subject = $_POST['subject'];
-                    $email = $_POST['email'];
-                    $message = $_POST['message'];
-                                    
-                    if(empty($name) || empty($subject) || empty($email) || empty($message)){
-                        ?>
-                        <div class="alert alert-dismisable alert-warning">
-                            <p><?php echo "All inputs are required!!" ?></p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ">
+                        <div class="card border-danger shadow">
+                            <div class="card-header bg-primary text-light">
+                                <h3 class="card-title text-center">Contact Us</h3>
+                            </div>
+                            <div class="card-body px-4">
+                                <form action="#" method="POST">
+                                    <div class="form-group text-center text-success">
+                                        <?= $result; ?>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-Mail</label>
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter E-Mail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter Subject"
+                                        required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Write Your Message"
+                                        required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-
-                        <?php
-                    }else{
-                        mail("aernestnjuki@gmail.com", $subject, $message, "From: $name <$message>");
-                        ?>
-                        <div class="alert alert-dismisable alert-success text-center">
-                            <p><?php echo "Successfull" ?></p>
-                        </div>
-                        <?php
-                    }
-                }
-            ?>
-                <form method="post" action="Myportfolio.php">
-                    <div class="scrollForm">
-                        <input type="text" id="form_fullname" name="fullName" required="">
-                        <label>
-                            enter name
-                        </label>
                     </div>
-                    <div class="scrollForm">
-                        <input type="text" id="form_subject" name="subject" required="">
-                        <label>
-                            Subject
-                        </label>
-                    </div>
-                    <div class="scrollForm">
-                        <input type="email" id="form_email" name="email" required="">
-                        <label>
-                            Email
-                        </label>
-                    </div>
-                    <div class="scrollForm">
-                        <input type="text" id="form_message" name="message" required="">
-                        <label>
-                            Email message
-                        </label>
-                    </div>
-                    <input type="submit" value="Submit" name="submit">
-                </form>
+                </div>
             </div>
         </div>
     </div>
