@@ -336,43 +336,34 @@
             <h3 class="text-center mt-4 me-scroll">Get in touch</h3>
             <div class="contactline"></div>
             <div class="form">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 ">
-                        <div class="card border-danger shadow">
-                            <div class="card-header bg-primary text-light">
-                                <h3 class="card-title text-center">Contact Us</h3>
-                            </div>
-                            <div class="card-body px-4">
-                                <form action="Myportfolio.php" method="POST">
-                                    <div class="form-group text-center text-success">
-                                        <?= $result; ?>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">E-Mail</label>
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter E-Mail" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter Subject"
-                                        required>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Write Your Message"
-                                        required></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                <form action="Myportfolio.php" method="post">
+                    <h3 class="text-center text-success"><?= $result; ?></h3>
+                    <div>
+                        <input type="text" id="form_name" name="name" required="">
+                        <label>
+                            Enter Name
+                        </label>
                     </div>
-                </div>
+                    <div>
+                        <input type="email" id="form_email" name="email" required="">
+                        <label>
+                            Enter Email Address
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" id="form_subject" name="subject" required="">
+                        <label>
+                            Enter subject
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" id="form_message" name="message" required="">
+                        <label>
+                            Enter Email Message
+                        </label>
+                    </div>
+                        <input type="submit" value="Submit" name="submit">
+                </form>
             </div>
         </div>
     </div>
