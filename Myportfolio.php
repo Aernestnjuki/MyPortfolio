@@ -377,7 +377,7 @@
 
     <!-- social media section -->
     <div class="media">
-        <a href="https://api.whatsapp.com/send?phone=254705203169&text=Hey%20Aernest%20i%20am%20.%20.%20.%20"><i class="fa fa-whatsapp" aria-hidden="true"></i></a><br>
+        <a href="https://api.whatsapp.com/send?phone=254705203169&text=Welocome%20to%20Aernest's%20WhatsApp%20DM%20.%20.%20"><i class="fa fa-whatsapp" aria-hidden="true"></i></a><br>
         <a href="https://www.facebook.com/aernest.njuki"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><br>
     </div>
 
