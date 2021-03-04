@@ -92,9 +92,9 @@ sr.reveal('.showcase', {delay: 450})
 
 
 //contacts
-sr.reveal('.contacts', {})
-sr.reveal('.me-scroll', {delay: 200})
-sr.reveal('.contactline', {delay: 200})
+//sr.reveal('.contacts', {})
+//sr.reveal('.me-scroll', {delay: 200})
+//sr.reveal('.contactline', {delay: 200})
 //sr.reveal('.form', {delay: 400})
 //sr.reveal('.scrollForm', {delay: 300})
 
