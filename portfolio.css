@@ -313,10 +313,16 @@ html{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     position: relative;
 }
-.contacts .form{
+/*.contacts .card{
+    height: 550px;
+}*/
+.contacts .card-header{
+    padding: 10px;
+}
+/*.contacts .form{
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -327,7 +333,7 @@ html{
     margin-top: 30px;
 	box-sizing: border-box;
 	/*border: 1px solid rgba(0,0,0,.1);
-	box-shadow: 0 5px 10px rgba(0,0,0,.2);*/
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 .contacts .form form input{
 	padding:5px;
@@ -372,6 +378,7 @@ html{
 .contacts .form form input:valid{
 	border-bottom: 2px solid rgb(66,133,244);
 }
+*/
 /* end of contacts section */
 
 
